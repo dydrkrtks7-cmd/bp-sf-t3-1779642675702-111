@@ -1,258 +1,256 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>정보 | 마포 서버 웜업 PBN 빌더</title>
-    <meta name="description" content="마포 PBN 빌더의 상세 정보 — 서버 웜업의 규칙을 다시 쓴다. 지루한 이론은 필요 없다. 진짜 웜업의 해부학. 010-6279-0862">
-    <meta name="keywords" content="PBN 빌더, 마포 서버 웜업, PBN 구축, 서버 웜업 전문, 마포 PBN, 웜업 솔루션, 티어3 PBN, 정보, 상세 가이드">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <link rel="canonical" href="https://sf-t3-1779642675702-111.maphoshirts.com/about.html">
-    <meta property="og:title" content="정보 | 마포 서버 웜업 PBN 빌더">
-    <meta property="og:description" content="마포 PBN 빌더의 상세 정보 — 서버 웜업의 규칙을 다시 쓴다. 지루한 이론은 필요 없다. 진짜 웜업의 해부학. 010-6279-0862">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Courier New', Courier, monospace;
-            background: #0a0a0a;
-            color: #e0e0e0;
-            line-height: 1.6;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        h1 {
-            font-size: 3rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -0.02em;
-            color: #f0f;
-            text-shadow: 4px 4px 0 #0ff, 8px 8px 0 rgba(255, 0, 255, 0.2);
-        }
-        h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            border-left: 6px solid #f0f;
-            padding-left: 15px;
-            margin: 40px 0 20px;
-            color: #0ff;
-        }
-        h3 {
-            font-size: 1.4rem;
-            font-weight: 600;
-            color: #fff;
-            margin-bottom: 10px;
-        }
-        p {
-            margin-bottom: 15px;
-            font-size: 1.05rem;
-            color: #b0b0b0;
-        }
-        a {
-            color: #f0f;
-            text-decoration: underline wavy 2px;
-            transition: color 0.2s;
-        }
-        a:hover {
-            color: #0ff;
-            text-decoration: none;
-        }
-        header {
-            background: #111;
-            border-bottom: 2px solid #f0f;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        .header-inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 0;
-        }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 900;
-            color: #0ff;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: -0.02em;
-        }
-        .logo:hover {
-            color: #f0f;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 25px;
-        }
-        nav ul li a {
-            color: #ccc;
-            text-decoration: none;
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 0.85rem;
-            padding: 5px 0;
-            border-bottom: 2px solid transparent;
-        }
-        nav ul li a:hover {
-            color: #f0f;
-            border-bottom-color: #f0f;
-        }
-        .nav-toggle {
-            display: none;
-            background: none;
-            border: 2px solid #0ff;
-            color: #0ff;
-            font-size: 1.5rem;
-            padding: 5px 12px;
-            cursor: pointer;
-        }
-        @media (max-width: 768px) {
-            nav ul {
-                display: none;
-                flex-direction: column;
-                background: #111;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                width: 100%;
-                padding: 20px;
-                gap: 15px;
-                border-bottom: 2px solid #f0f;
-            }
-            nav ul.active {
-                display: flex;
-            }
-            .nav-toggle {
-                display: block;
-            }
-            h1 {
-                font-size: 2.2rem;
-            }
-        }
-        .hero {
-            padding: 80px 0 60px;
-            text-align: center;
-            border-bottom: 1px dashed #333;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            max-width: 700px;
-            margin: 20px auto 30px;
-            color: #aaa;
-        }
-        .cta {
-            display: inline-block;
-            background: #f0f;
-            color: #0a0a0a;
-            padding: 15px 40px;
-            font-weight: 900;
-            text-transform: uppercase;
-            text-decoration: none;
-            border: 2px solid #f0f;
-            font-size: 1.1rem;
-            letter-spacing: 0.1em;
-            transition: 0.2s;
-        }
-        .cta:hover {
-            background: #0ff;
-            border-color: #0ff;
-            color: #000;
-        }
-        .grid-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            margin: 50px 0;
-        }
-        @media (max-width: 768px) {
-            .grid-2 {
-                grid-template-columns: 1fr;
-            }
-        }
-        .card {
-            background: #1a1a1a;
-            border: 1px solid #333;
-            padding: 30px;
-            box-shadow: 8px 8px 0 rgba(255, 0, 255, 0.1);
-        }
-        .card h3 {
-            margin-bottom: 15px;
-            font-size: 1.5rem;
-        }
-        .card p {
-            font-size: 0.95rem;
-        }
-        .faq-item {
-            border-bottom: 1px solid #222;
-            padding: 20px 0;
-        }
-        .faq-item h3 {
-            font-size: 1.3rem;
-            cursor: pointer;
-        }
-        .faq-item h3::before {
-            content: "▶ ";
-            color: #f0f;
-        }
-        .faq-item p {
-            margin-top: 10px;
-            padding-left: 25px;
-            color: #999;
-        }
-        footer {
-            margin-top: auto;
-            background: #111;
-            border-top: 2px solid #f0f;
-            padding: 30px 0;
-            text-align: center;
-        }
-        footer p {
-            color: #555;
-            font-size: 0.85rem;
-        }
-        .tel-link {
-            color: #0ff;
-            font-weight: 700;
-            font-size: 1.2rem;
-            text-decoration: none;
-        }
-        .tel-link:hover {
-            color: #f0f;
-        }
-    </style>
-  <meta property="og:url" content="https://sf-t3-1779642675702-111.maphoshirts.com/about.html">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>정보 | 마포 서버 웜업 PBN 빌더</title>
+ <meta name="description" content="마포 PBN 빌더의 상세 정보 — 서버 웜업의 규칙을 다시 쓴다. 지루한 이론은 필요 없다. 진짜 웜업의 해부학.">
+ <meta name="keywords" content="PBN 빌더, 마포 서버 웜업, PBN 구축, 서버 웜업 전문, 마포 PBN, 웜업 솔루션, 티어3 PBN, 정보, 상세 가이드">
+ <link rel="canonical" href="https://sf-t3-1779642675702-111.maphoshirts.com/about.html">
+ <meta property="og:title" content="정보 | 마포 서버 웜업 PBN 빌더">
+ <meta property="og:description" content="마포 PBN 빌더의 상세 정보 — 서버 웜업의 규칙을 다시 쓴다. 지루한 이론은 필요 없다. 진짜 웜업의 해부학.">
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ body {
+ font-family: 'Courier New', Courier, monospace;
+ background: #0a0a0a;
+ color: #e0e0e0;
+ line-height: 1.6;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 20px;
+ }
+ h1 {
+ font-size: 3rem;
+ font-weight: 900;
+ text-transform: uppercase;
+ letter-spacing: -0.02em;
+ color: #f0f;
+ text-shadow: 4px 4px 0 #0ff, 8px 8px 0 rgba(255, 0, 255, 0.2);
+ }
+ h2 {
+ font-size: 2rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ border-left: 6px solid #f0f;
+ padding-left: 15px;
+ margin: 40px 0 20px;
+ color: #0ff;
+ }
+ h3 {
+ font-size: 1.4rem;
+ font-weight: 600;
+ color: #fff;
+ margin-bottom: 10px;
+ }
+ p {
+ margin-bottom: 15px;
+ font-size: 1.05rem;
+ color: #b0b0b0;
+ }
+ a {
+ color: #f0f;
+ text-decoration: underline wavy 2px;
+ transition: color 0.2s;
+ }
+ a:hover {
+ color: #0ff;
+ text-decoration: none;
+ }
+ header {
+ background: #111;
+ border-bottom: 2px solid #f0f;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ }
+ .header-inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 15px 0;
+ }
+ .logo {
+ font-size: 1.5rem;
+ font-weight: 900;
+ color: #0ff;
+ text-decoration: none;
+ text-transform: uppercase;
+ letter-spacing: -0.02em;
+ }
+ .logo:hover {
+ color: #f0f;
+ }
+ nav ul {
+ list-style: none;
+ display: flex;
+ gap: 25px;
+ }
+ nav ul li a {
+ color: #ccc;
+ text-decoration: none;
+ font-weight: 600;
+ text-transform: uppercase;
+ font-size: 0.85rem;
+ padding: 5px 0;
+ border-bottom: 2px solid transparent;
+ }
+ nav ul li a:hover {
+ color: #f0f;
+ border-bottom-color: #f0f;
+ }
+ .nav-toggle {
+ display: none;
+ background: none;
+ border: 2px solid #0ff;
+ color: #0ff;
+ font-size: 1.5rem;
+ padding: 5px 12px;
+ cursor: pointer;
+ }
+ @media (max-width: 768px) {
+ nav ul {
+ display: none;
+ flex-direction: column;
+ background: #111;
+ position: absolute;
+ top: 60px;
+ left: 0;
+ width: 100%;
+ padding: 20px;
+ gap: 15px;
+ border-bottom: 2px solid #f0f;
+ }
+ nav ul.active {
+ display: flex;
+ }
+ .nav-toggle {
+ display: block;
+ }
+ h1 {
+ font-size: 2.2rem;
+ }
+ }
+ .hero {
+ padding: 80px 0 60px;
+ text-align: center;
+ border-bottom: 1px dashed #333;
+ }
+ .hero p {
+ font-size: 1.2rem;
+ max-width: 700px;
+ margin: 20px auto 30px;
+ color: #aaa;
+ }
+ .cta {
+ display: inline-block;
+ background: #f0f;
+ color: #0a0a0a;
+ padding: 15px 40px;
+ font-weight: 900;
+ text-transform: uppercase;
+ text-decoration: none;
+ border: 2px solid #f0f;
+ font-size: 1.1rem;
+ letter-spacing: 0.1em;
+ transition: 0.2s;
+ }
+ .cta:hover {
+ background: #0ff;
+ border-color: #0ff;
+ color: #000;
+ }
+ .grid-2 {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 40px;
+ margin: 50px 0;
+ }
+ @media (max-width: 768px) {
+ .grid-2 {
+ grid-template-columns: 1fr;
+ }
+ }
+ .card {
+ background: #1a1a1a;
+ border: 1px solid #333;
+ padding: 30px;
+ box-shadow: 8px 8px 0 rgba(255, 0, 255, 0.1);
+ }
+ .card h3 {
+ margin-bottom: 15px;
+ font-size: 1.5rem;
+ }
+ .card p {
+ font-size: 0.95rem;
+ }
+ .faq-item {
+ border-bottom: 1px solid #222;
+ padding: 20px 0;
+ }
+ .faq-item h3 {
+ font-size: 1.3rem;
+ cursor: pointer;
+ }
+ .faq-item h3::before {
+ content: "▶ ";
+ color: #f0f;
+ }
+ .faq-item p {
+ margin-top: 10px;
+ padding-left: 25px;
+ color: #999;
+ }
+ footer {
+ margin-top: auto;
+ background: #111;
+ border-top: 2px solid #f0f;
+ padding: 30px 0;
+ text-align: center;
+ }
+ footer p {
+ color: #555;
+ font-size: 0.85rem;
+ }
+ .tel-link {
+ color: #0ff;
+ font-weight: 700;
+ font-size: 1.2rem;
+ text-decoration: none;
+ }
+ .tel-link:hover {
+ color: #f0f;
+ }
+ </style>
+ <meta property="og:url" content="https://sf-t3-1779642675702-111.maphoshirts.com/about.html">
+ <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <header>
-        <div class="container header-inner">
-            <a href="index.html" class="logo">마포 PBN</a>
-            <nav>
-                <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
-                <ul>
-                    <li><a href="index.html">홈</a></li>
-                    <li><a href="info.html">정보</a></li>
-                    <li><a href="services.html">서비스</a></li>
-                    <li><a href="contact.html">연락처</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+ <header>
+ <div class="container header-inner">
+ <a href="index.html" class="logo">마포 PBN</a>
+ <nav>
+ <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
+ <ul>
+ <li><a href="index.html">홈</a></li>
+ <li><a href="info.html">정보</a></li>
+ <li><a href="services.html">서비스</a></li>
+ <li><a href="contact.html">연락처</a></li>
+ </ul>
+ </nav>
+ </div>
+ </header>
 
 <main>
 <section class="hero">
@@ -290,7 +288,7 @@
 <section class="cta">
 <div class="container">
 <p>문의</p>
-<a class="tel-link" href="tel:01062790862">01062790862</a>
+
 </div>
 </section>
 </main>
